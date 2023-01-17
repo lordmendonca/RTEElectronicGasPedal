@@ -1,0 +1,184 @@
+C:/Jason/EIT/Semester_02/01_EAA/Lab/Assignment_1/01_Electronic_GasPedal.cydsn/CortexM3/ARM_GCC_541/Debug/main.o : C:/Jason/EIT/Semester_02/01_EAA/Lab/Assignment_1/01_Electronic_GasPedal.cydsn/Generated_Source/PSoC5/CYDMAC.H C:/Jason/EIT/Semester_02/01_EAA/Lab/Assignment_1/01_Electronic_GasPedal.cydsn/Generated_Source/PSoC5/CYFITTER.H C:/Jason/EIT/Semester_02/01_EAA/Lab/Assignment_1/01_Electronic_GasPedal.cydsn/Generated_Source/PSoC5/CyDmac.h C:/Jason/EIT/Semester_02/01_EAA/Lab/Assignment_1/01_Electronic_GasPedal.cydsn/Generated_Source/PSoC5/CyFlash.h C:/Jason/EIT/Semester_02/01_EAA/Lab/Assignment_1/01_Electronic_GasPedal.cydsn/Generated_Source/PSoC5/CyLib.h C:/Jason/EIT/Semester_02/01_EAA/Lab/Assignment_1/01_Electronic_GasPedal.cydsn/Generated_Source/PSoC5/CySpc.h C:/Jason/EIT/Semester_02/01_EAA/Lab/Assignment_1/01_Electronic_GasPedal.cydsn/Generated_Source/PSoC5/ErikaOS_ISR_definition.inc C:/Jason/EIT/Semester_02/01_EAA/Lab/Assignment_1/01_Electronic_GasPedal.cydsn/Generated_Source/PSoC5/ErikaOS_common_ee_compiler_gcc.inc C:/Jason/EIT/Semester_02/01_EAA/Lab/Assignment_1/01_Electronic_GasPedal.cydsn/Generated_Source/PSoC5/ErikaOS_common_ee_hal_structs.inc C:/Jason/EIT/Semester_02/01_EAA/Lab/Assignment_1/01_Electronic_GasPedal.cydsn/Generated_Source/PSoC5/ErikaOS_common_ee_irqstub.inc C:/Jason/EIT/Semester_02/01_EAA/Lab/Assignment_1/01_Electronic_GasPedal.cydsn/Generated_Source/PSoC5/ErikaOS_common_ee_primitives.inc C:/Jason/EIT/Semester_02/01_EAA/Lab/Assignment_1/01_Electronic_GasPedal.cydsn/Generated_Source/PSoC5/ErikaOS_common_ee_types.inc C:/Jason/EIT/Semester_02/01_EAA/Lab/Assignment_1/01_Electronic_GasPedal.cydsn/Generated_Source/PSoC5/ErikaOS_cortex_mx_ee_context.inc C:/Jason/EIT/Semester_02/01_EAA/Lab/Assignment_1/01_Electronic_GasPedal.cydsn/Generated_Source/PSoC5/ErikaOS_cortex_mx_ee_cpu.inc C:/Jason/EIT/Semester_02/01_EAA/Lab/Assignment_1/01_Electronic_GasPedal.cydsn/Generated_Source/PSoC5/ErikaOS_cortex_mx_ee_irq.inc C:/Jason/EIT/Semester_02/01_EAA/Lab/Assignment_1/01_Electronic_GasPedal.cydsn/Generated_Source/PSoC5/ErikaOS_cortex_mx_ee_irq_cng_cont.inc C:/Jason/EIT/Semester_02/01_EAA/Lab/Assignment_1/01_Electronic_GasPedal.cydsn/Generated_Source/PSoC5/ErikaOS_cortex_mx_ee_nvic.inc C:/Jason/EIT/Semester_02/01_EAA/Lab/Assignment_1/01_Electronic_GasPedal.cydsn/Generated_Source/PSoC5/ErikaOS_cortex_mx_ee_systick.inc C:/Jason/EIT/Semester_02/01_EAA/Lab/Assignment_1/01_Electronic_GasPedal.cydsn/Generated_Source/PSoC5/ErikaOS_ee.h C:/Jason/EIT/Semester_02/01_EAA/Lab/Assignment_1/01_Electronic_GasPedal.cydsn/Generated_Source/PSoC5/ErikaOS_ee_api.inc C:/Jason/EIT/Semester_02/01_EAA/Lab/Assignment_1/01_Electronic_GasPedal.cydsn/Generated_Source/PSoC5/ErikaOS_ee_as_kernel.inc C:/Jason/EIT/Semester_02/01_EAA/Lab/Assignment_1/01_Electronic_GasPedal.cydsn/Generated_Source/PSoC5/ErikaOS_ee_as_timing_prot.inc C:/Jason/EIT/Semester_02/01_EAA/Lab/Assignment_1/01_Electronic_GasPedal.cydsn/Generated_Source/PSoC5/ErikaOS_ee_irq.inc C:/Jason/EIT/Semester_02/01_EAA/Lab/Assignment_1/01_Electronic_GasPedal.cydsn/Generated_Source/PSoC5/ErikaOS_ee_oo_api.inc C:/Jason/EIT/Semester_02/01_EAA/Lab/Assignment_1/01_Electronic_GasPedal.cydsn/Generated_Source/PSoC5/ErikaOS_ee_oo_common.inc C:/Jason/EIT/Semester_02/01_EAA/Lab/Assignment_1/01_Electronic_GasPedal.cydsn/Generated_Source/PSoC5/ErikaOS_ee_oo_inline.inc C:/Jason/EIT/Semester_02/01_EAA/Lab/Assignment_1/01_Electronic_GasPedal.cydsn/Generated_Source/PSoC5/ErikaOS_ee_oo_intfunc.inc C:/Jason/EIT/Semester_02/01_EAA/Lab/Assignment_1/01_Electronic_GasPedal.cydsn/Generated_Source/PSoC5/ErikaOS_ee_oo_irq.inc C:/Jason/EIT/Semester_02/01_EAA/Lab/Assignment_1/01_Electronic_GasPedal.cydsn/Generated_Source/PSoC5/ErikaOS_ee_oo_kernel.inc C:/Jason/EIT/Semester_02/01_EAA/Lab/Assignment_1/01_Electronic_GasPedal.cydsn/Generated_Source/PSoC5/ErikaOS_ee_rtdruid_versions.inc C:/Jason/EIT/Semester_02/01_EAA/Lab/Assignment_1/01_Electronic_GasPedal.cydsn/Generated_Source/PSoC5/ErikaOS_ee_tracing.h C:/Jason/EIT/Semester_02/01_EAA/Lab/Assignment_1/01_Electronic_GasPedal.cydsn/Generated_Source/PSoC5/ErikaOS_eecfg.inc C:/Jason/EIT/Semester_02/01_EAA/Lab/Assignment_1/01_Electronic_GasPedal.cydsn/Generated_Source/PSoC5/ErikaOS_event_definition.inc C:/Jason/EIT/Semester_02/01_EAA/Lab/Assignment_1/01_Electronic_GasPedal.cydsn/Generated_Source/PSoC5/JOYSTICK_ADC_XY.h C:/Jason/EIT/Semester_02/01_EAA/Lab/Assignment_1/01_Electronic_GasPedal.cydsn/Generated_Source/PSoC5/JOYSTICK_ADC_XY_FinalBuf_dma.h C:/Jason/EIT/Semester_02/01_EAA/Lab/Assignment_1/01_Electronic_GasPedal.cydsn/Generated_Source/PSoC5/JOYSTICK_ADC_XY_IRQ.h C:/Jason/EIT/Semester_02/01_EAA/Lab/Assignment_1/01_Electronic_GasPedal.cydsn/Generated_Source/PSoC5/JOYSTICK_ADC_XY_IntClock.h C:/Jason/EIT/Semester_02/01_EAA/Lab/Assignment_1/01_Electronic_GasPedal.cydsn/Generated_Source/PSoC5/JOYSTICK_ADC_XY_SAR.h C:/Jason/EIT/Semester_02/01_EAA/Lab/Assignment_1/01_Electronic_GasPedal.cydsn/Generated_Source/PSoC5/JOYSTICK_ADC_XY_TempBuf_dma.h C:/Jason/EIT/Semester_02/01_EAA/Lab/Assignment_1/01_Electronic_GasPedal.cydsn/Generated_Source/PSoC5/Joystick_X.h C:/Jason/EIT/Semester_02/01_EAA/Lab/Assignment_1/01_Electronic_GasPedal.cydsn/Generated_Source/PSoC5/Joystick_X_aliases.h C:/Jason/EIT/Semester_02/01_EAA/Lab/Assignment_1/01_Electronic_GasPedal.cydsn/Generated_Source/PSoC5/Joystick_Y.h C:/Jason/EIT/Semester_02/01_EAA/Lab/Assignment_1/01_Electronic_GasPedal.cydsn/Generated_Source/PSoC5/Joystick_Y_aliases.h C:/Jason/EIT/Semester_02/01_EAA/Lab/Assignment_1/01_Electronic_GasPedal.cydsn/Generated_Source/PSoC5/LED_green.h C:/Jason/EIT/Semester_02/01_EAA/Lab/Assignment_1/01_Electronic_GasPedal.cydsn/Generated_Source/PSoC5/LED_green_aliases.h C:/Jason/EIT/Semester_02/01_EAA/Lab/Assignment_1/01_Electronic_GasPedal.cydsn/Generated_Source/PSoC5/LED_red.h C:/Jason/EIT/Semester_02/01_EAA/Lab/Assignment_1/01_Electronic_GasPedal.cydsn/Generated_Source/PSoC5/LED_red_aliases.h C:/Jason/EIT/Semester_02/01_EAA/Lab/Assignment_1/01_Electronic_GasPedal.cydsn/Generated_Source/PSoC5/LED_yellow.h C:/Jason/EIT/Semester_02/01_EAA/Lab/Assignment_1/01_Electronic_GasPedal.cydsn/Generated_Source/PSoC5/LED_yellow_aliases.h C:/Jason/EIT/Semester_02/01_EAA/Lab/Assignment_1/01_Electronic_GasPedal.cydsn/Generated_Source/PSoC5/OSShutdown.h C:/Jason/EIT/Semester_02/01_EAA/Lab/Assignment_1/01_Electronic_GasPedal.cydsn/Generated_Source/PSoC5/OSShutdown_aliases.h C:/Jason/EIT/Semester_02/01_EAA/Lab/Assignment_1/01_Electronic_GasPedal.cydsn/Generated_Source/PSoC5/PWM_Clock.h C:/Jason/EIT/Semester_02/01_EAA/Lab/Assignment_1/01_Electronic_GasPedal.cydsn/Generated_Source/PSoC5/RGB_B.h C:/Jason/EIT/Semester_02/01_EAA/Lab/Assignment_1/01_Electronic_GasPedal.cydsn/Generated_Source/PSoC5/RGB_B_aliases.h C:/Jason/EIT/Semester_02/01_EAA/Lab/Assignment_1/01_Electronic_GasPedal.cydsn/Generated_Source/PSoC5/RGB_G.h C:/Jason/EIT/Semester_02/01_EAA/Lab/Assignment_1/01_Electronic_GasPedal.cydsn/Generated_Source/PSoC5/RGB_G_aliases.h C:/Jason/EIT/Semester_02/01_EAA/Lab/Assignment_1/01_Electronic_GasPedal.cydsn/Generated_Source/PSoC5/RGB_PWM_blue.h C:/Jason/EIT/Semester_02/01_EAA/Lab/Assignment_1/01_Electronic_GasPedal.cydsn/Generated_Source/PSoC5/RGB_PWM_green.h C:/Jason/EIT/Semester_02/01_EAA/Lab/Assignment_1/01_Electronic_GasPedal.cydsn/Generated_Source/PSoC5/RGB_PWM_red.h C:/Jason/EIT/Semester_02/01_EAA/Lab/Assignment_1/01_Electronic_GasPedal.cydsn/Generated_Source/PSoC5/RGB_R.h C:/Jason/EIT/Semester_02/01_EAA/Lab/Assignment_1/01_Electronic_GasPedal.cydsn/Generated_Source/PSoC5/RGB_R_aliases.h C:/Jason/EIT/Semester_02/01_EAA/Lab/Assignment_1/01_Electronic_GasPedal.cydsn/Generated_Source/PSoC5/UART_LOG.h C:/Jason/EIT/Semester_02/01_EAA/Lab/Assignment_1/01_Electronic_GasPedal.cydsn/Generated_Source/PSoC5/UART_LOG_IntClock.h C:/Jason/EIT/Semester_02/01_EAA/Lab/Assignment_1/01_Electronic_GasPedal.cydsn/Generated_Source/PSoC5/cmsis_armcc.h C:/Jason/EIT/Semester_02/01_EAA/Lab/Assignment_1/01_Electronic_GasPedal.cydsn/Generated_Source/PSoC5/cmsis_compiler.h C:/Jason/EIT/Semester_02/01_EAA/Lab/Assignment_1/01_Electronic_GasPedal.cydsn/Generated_Source/PSoC5/cmsis_gcc.h C:/Jason/EIT/Semester_02/01_EAA/Lab/Assignment_1/01_Electronic_GasPedal.cydsn/Generated_Source/PSoC5/core_cm3.h C:/Jason/EIT/Semester_02/01_EAA/Lab/Assignment_1/01_Electronic_GasPedal.cydsn/Generated_Source/PSoC5/core_cm3_psoc5.h C:/Jason/EIT/Semester_02/01_EAA/Lab/Assignment_1/01_Electronic_GasPedal.cydsn/Generated_Source/PSoC5/cyPm.h C:/Jason/EIT/Semester_02/01_EAA/Lab/Assignment_1/01_Electronic_GasPedal.cydsn/Generated_Source/PSoC5/cy_em_eeprom.h C:/Jason/EIT/Semester_02/01_EAA/Lab/Assignment_1/01_Electronic_GasPedal.cydsn/Generated_Source/PSoC5/cydevice.h C:/Jason/EIT/Semester_02/01_EAA/Lab/Assignment_1/01_Electronic_GasPedal.cydsn/Generated_Source/PSoC5/cydevice_trm.h C:/Jason/EIT/Semester_02/01_EAA/Lab/Assignment_1/01_Electronic_GasPedal.cydsn/Generated_Source/PSoC5/cydisabledsheets.h C:/Jason/EIT/Semester_02/01_EAA/Lab/Assignment_1/01_Electronic_GasPedal.cydsn/Generated_Source/PSoC5/cyfitter.h C:/Jason/EIT/Semester_02/01_EAA/Lab/Assignment_1/01_Electronic_GasPedal.cydsn/Generated_Source/PSoC5/cyfitter_cfg.h C:/Jason/EIT/Semester_02/01_EAA/Lab/Assignment_1/01_Electronic_GasPedal.cydsn/Generated_Source/PSoC5/cypins.h C:/Jason/EIT/Semester_02/01_EAA/Lab/Assignment_1/01_Electronic_GasPedal.cydsn/Generated_Source/PSoC5/cytypes.h C:/Jason/EIT/Semester_02/01_EAA/Lab/Assignment_1/01_Electronic_GasPedal.cydsn/Generated_Source/PSoC5/isr_OSShutdown.h C:/Jason/EIT/Semester_02/01_EAA/Lab/Assignment_1/01_Electronic_GasPedal.cydsn/Generated_Source/PSoC5/isr_testWDT.h C:/Jason/EIT/Semester_02/01_EAA/Lab/Assignment_1/01_Electronic_GasPedal.cydsn/Generated_Source/PSoC5/project.h C:/Jason/EIT/Semester_02/01_EAA/Lab/Assignment_1/01_Electronic_GasPedal.cydsn/Generated_Source/PSoC5/testWDT.h C:/Jason/EIT/Semester_02/01_EAA/Lab/Assignment_1/01_Electronic_GasPedal.cydsn/Generated_Source/PSoC5/testWDT_aliases.h C:/Jason/EIT/Semester_02/01_EAA/Lab/Assignment_1/01_Electronic_GasPedal.cydsn/source/bsw/LabBoard/joystick.h C:/Jason/EIT/Semester_02/01_EAA/Lab/Assignment_1/01_Electronic_GasPedal.cydsn/source/bsw/LabBoard/led.h C:/Jason/EIT/Semester_02/01_EAA/Lab/Assignment_1/01_Electronic_GasPedal.cydsn/source/bsw/derivate.h C:/Jason/EIT/Semester_02/01_EAA/Lab/Assignment_1/01_Electronic_GasPedal.cydsn/source/bsw/global.h C:/Jason/EIT/Semester_02/01_EAA/Lab/Assignment_1/01_Electronic_GasPedal.cydsn/source/bsw/watchdog.h C:/Jason/EIT/Semester_02/01_EAA/Lab/Assignment_1/01_Electronic_GasPedal.cydsn/source/rte/rte_types.h C:/Jason/EIT/Semester_02/01_EAA/Lab/Assignment_1/01_Electronic_GasPedal.cydsn/source/asw/main.c C:/Jason/EIT/Semester_02/01_EAA/Lab/Assignment_1/01_Electronic_GasPedal.cydsn/source/asw/tsk_background.h C:/Jason/EIT/Semester_02/01_EAA/Lab/Assignment_1/01_Electronic_GasPedal.cydsn/source/asw/tsk_control.h C:/Jason/EIT/Semester_02/01_EAA/Lab/Assignment_1/01_Electronic_GasPedal.cydsn/source/asw/tsk_inputoutput.h C:/Jason/EIT/Semester_02/01_EAA/Lab/Assignment_1/01_Electronic_GasPedal.cydsn/source/asw/tsk_system.h 
+
+C:/Jason/EIT/Semester_02/01_EAA/Lab/Assignment_1/01_Electronic_GasPedal.cydsn/Generated_Source/PSoC5/CYDMAC.H : 
+
+C:/Jason/EIT/Semester_02/01_EAA/Lab/Assignment_1/01_Electronic_GasPedal.cydsn/Generated_Source/PSoC5/CYFITTER.H : 
+
+C:/Jason/EIT/Semester_02/01_EAA/Lab/Assignment_1/01_Electronic_GasPedal.cydsn/Generated_Source/PSoC5/CyFlash.h : 
+
+C:/Jason/EIT/Semester_02/01_EAA/Lab/Assignment_1/01_Electronic_GasPedal.cydsn/Generated_Source/PSoC5/CyLib.h : 
+
+C:/Jason/EIT/Semester_02/01_EAA/Lab/Assignment_1/01_Electronic_GasPedal.cydsn/Generated_Source/PSoC5/CySpc.h : 
+
+C:/Jason/EIT/Semester_02/01_EAA/Lab/Assignment_1/01_Electronic_GasPedal.cydsn/Generated_Source/PSoC5/ErikaOS_ISR_definition.inc : 
+
+C:/Jason/EIT/Semester_02/01_EAA/Lab/Assignment_1/01_Electronic_GasPedal.cydsn/Generated_Source/PSoC5/ErikaOS_common_ee_compiler_gcc.inc : 
+
+C:/Jason/EIT/Semester_02/01_EAA/Lab/Assignment_1/01_Electronic_GasPedal.cydsn/Generated_Source/PSoC5/ErikaOS_common_ee_hal_structs.inc : 
+
+C:/Jason/EIT/Semester_02/01_EAA/Lab/Assignment_1/01_Electronic_GasPedal.cydsn/Generated_Source/PSoC5/ErikaOS_common_ee_irqstub.inc : 
+
+C:/Jason/EIT/Semester_02/01_EAA/Lab/Assignment_1/01_Electronic_GasPedal.cydsn/Generated_Source/PSoC5/ErikaOS_common_ee_primitives.inc : 
+
+C:/Jason/EIT/Semester_02/01_EAA/Lab/Assignment_1/01_Electronic_GasPedal.cydsn/Generated_Source/PSoC5/ErikaOS_common_ee_types.inc : 
+
+C:/Jason/EIT/Semester_02/01_EAA/Lab/Assignment_1/01_Electronic_GasPedal.cydsn/Generated_Source/PSoC5/ErikaOS_cortex_mx_ee_context.inc : 
+
+C:/Jason/EIT/Semester_02/01_EAA/Lab/Assignment_1/01_Electronic_GasPedal.cydsn/Generated_Source/PSoC5/ErikaOS_cortex_mx_ee_cpu.inc : 
+
+C:/Jason/EIT/Semester_02/01_EAA/Lab/Assignment_1/01_Electronic_GasPedal.cydsn/Generated_Source/PSoC5/ErikaOS_cortex_mx_ee_irq.inc : 
+
+C:/Jason/EIT/Semester_02/01_EAA/Lab/Assignment_1/01_Electronic_GasPedal.cydsn/Generated_Source/PSoC5/ErikaOS_cortex_mx_ee_irq_cng_cont.inc : 
+
+C:/Jason/EIT/Semester_02/01_EAA/Lab/Assignment_1/01_Electronic_GasPedal.cydsn/Generated_Source/PSoC5/ErikaOS_cortex_mx_ee_nvic.inc : 
+
+C:/Jason/EIT/Semester_02/01_EAA/Lab/Assignment_1/01_Electronic_GasPedal.cydsn/Generated_Source/PSoC5/ErikaOS_cortex_mx_ee_systick.inc : 
+
+C:/Jason/EIT/Semester_02/01_EAA/Lab/Assignment_1/01_Electronic_GasPedal.cydsn/Generated_Source/PSoC5/ErikaOS_ee.h : 
+
+C:/Jason/EIT/Semester_02/01_EAA/Lab/Assignment_1/01_Electronic_GasPedal.cydsn/Generated_Source/PSoC5/ErikaOS_ee_api.inc : 
+
+C:/Jason/EIT/Semester_02/01_EAA/Lab/Assignment_1/01_Electronic_GasPedal.cydsn/Generated_Source/PSoC5/ErikaOS_ee_as_kernel.inc : 
+
+C:/Jason/EIT/Semester_02/01_EAA/Lab/Assignment_1/01_Electronic_GasPedal.cydsn/Generated_Source/PSoC5/ErikaOS_ee_as_timing_prot.inc : 
+
+C:/Jason/EIT/Semester_02/01_EAA/Lab/Assignment_1/01_Electronic_GasPedal.cydsn/Generated_Source/PSoC5/ErikaOS_ee_irq.inc : 
+
+C:/Jason/EIT/Semester_02/01_EAA/Lab/Assignment_1/01_Electronic_GasPedal.cydsn/Generated_Source/PSoC5/ErikaOS_ee_oo_api.inc : 
+
+C:/Jason/EIT/Semester_02/01_EAA/Lab/Assignment_1/01_Electronic_GasPedal.cydsn/Generated_Source/PSoC5/ErikaOS_ee_oo_common.inc : 
+
+C:/Jason/EIT/Semester_02/01_EAA/Lab/Assignment_1/01_Electronic_GasPedal.cydsn/Generated_Source/PSoC5/ErikaOS_ee_oo_inline.inc : 
+
+C:/Jason/EIT/Semester_02/01_EAA/Lab/Assignment_1/01_Electronic_GasPedal.cydsn/Generated_Source/PSoC5/ErikaOS_ee_oo_intfunc.inc : 
+
+C:/Jason/EIT/Semester_02/01_EAA/Lab/Assignment_1/01_Electronic_GasPedal.cydsn/Generated_Source/PSoC5/ErikaOS_ee_oo_irq.inc : 
+
+C:/Jason/EIT/Semester_02/01_EAA/Lab/Assignment_1/01_Electronic_GasPedal.cydsn/Generated_Source/PSoC5/ErikaOS_ee_oo_kernel.inc : 
+
+C:/Jason/EIT/Semester_02/01_EAA/Lab/Assignment_1/01_Electronic_GasPedal.cydsn/Generated_Source/PSoC5/ErikaOS_ee_rtdruid_versions.inc : 
+
+C:/Jason/EIT/Semester_02/01_EAA/Lab/Assignment_1/01_Electronic_GasPedal.cydsn/Generated_Source/PSoC5/ErikaOS_ee_tracing.h : 
+
+C:/Jason/EIT/Semester_02/01_EAA/Lab/Assignment_1/01_Electronic_GasPedal.cydsn/Generated_Source/PSoC5/ErikaOS_eecfg.inc : 
+
+C:/Jason/EIT/Semester_02/01_EAA/Lab/Assignment_1/01_Electronic_GasPedal.cydsn/Generated_Source/PSoC5/ErikaOS_event_definition.inc : 
+
+C:/Jason/EIT/Semester_02/01_EAA/Lab/Assignment_1/01_Electronic_GasPedal.cydsn/Generated_Source/PSoC5/JOYSTICK_ADC_XY.h : 
+
+C:/Jason/EIT/Semester_02/01_EAA/Lab/Assignment_1/01_Electronic_GasPedal.cydsn/Generated_Source/PSoC5/JOYSTICK_ADC_XY_FinalBuf_dma.h : 
+
+C:/Jason/EIT/Semester_02/01_EAA/Lab/Assignment_1/01_Electronic_GasPedal.cydsn/Generated_Source/PSoC5/JOYSTICK_ADC_XY_IRQ.h : 
+
+C:/Jason/EIT/Semester_02/01_EAA/Lab/Assignment_1/01_Electronic_GasPedal.cydsn/Generated_Source/PSoC5/JOYSTICK_ADC_XY_IntClock.h : 
+
+C:/Jason/EIT/Semester_02/01_EAA/Lab/Assignment_1/01_Electronic_GasPedal.cydsn/Generated_Source/PSoC5/JOYSTICK_ADC_XY_SAR.h : 
+
+C:/Jason/EIT/Semester_02/01_EAA/Lab/Assignment_1/01_Electronic_GasPedal.cydsn/Generated_Source/PSoC5/JOYSTICK_ADC_XY_TempBuf_dma.h : 
+
+C:/Jason/EIT/Semester_02/01_EAA/Lab/Assignment_1/01_Electronic_GasPedal.cydsn/Generated_Source/PSoC5/Joystick_X.h : 
+
+C:/Jason/EIT/Semester_02/01_EAA/Lab/Assignment_1/01_Electronic_GasPedal.cydsn/Generated_Source/PSoC5/Joystick_X_aliases.h : 
+
+C:/Jason/EIT/Semester_02/01_EAA/Lab/Assignment_1/01_Electronic_GasPedal.cydsn/Generated_Source/PSoC5/Joystick_Y.h : 
+
+C:/Jason/EIT/Semester_02/01_EAA/Lab/Assignment_1/01_Electronic_GasPedal.cydsn/Generated_Source/PSoC5/Joystick_Y_aliases.h : 
+
+C:/Jason/EIT/Semester_02/01_EAA/Lab/Assignment_1/01_Electronic_GasPedal.cydsn/Generated_Source/PSoC5/LED_green.h : 
+
+C:/Jason/EIT/Semester_02/01_EAA/Lab/Assignment_1/01_Electronic_GasPedal.cydsn/Generated_Source/PSoC5/LED_green_aliases.h : 
+
+C:/Jason/EIT/Semester_02/01_EAA/Lab/Assignment_1/01_Electronic_GasPedal.cydsn/Generated_Source/PSoC5/LED_red.h : 
+
+C:/Jason/EIT/Semester_02/01_EAA/Lab/Assignment_1/01_Electronic_GasPedal.cydsn/Generated_Source/PSoC5/LED_red_aliases.h : 
+
+C:/Jason/EIT/Semester_02/01_EAA/Lab/Assignment_1/01_Electronic_GasPedal.cydsn/Generated_Source/PSoC5/LED_yellow.h : 
+
+C:/Jason/EIT/Semester_02/01_EAA/Lab/Assignment_1/01_Electronic_GasPedal.cydsn/Generated_Source/PSoC5/LED_yellow_aliases.h : 
+
+C:/Jason/EIT/Semester_02/01_EAA/Lab/Assignment_1/01_Electronic_GasPedal.cydsn/Generated_Source/PSoC5/OSShutdown.h : 
+
+C:/Jason/EIT/Semester_02/01_EAA/Lab/Assignment_1/01_Electronic_GasPedal.cydsn/Generated_Source/PSoC5/OSShutdown_aliases.h : 
+
+C:/Jason/EIT/Semester_02/01_EAA/Lab/Assignment_1/01_Electronic_GasPedal.cydsn/Generated_Source/PSoC5/PWM_Clock.h : 
+
+C:/Jason/EIT/Semester_02/01_EAA/Lab/Assignment_1/01_Electronic_GasPedal.cydsn/Generated_Source/PSoC5/RGB_B.h : 
+
+C:/Jason/EIT/Semester_02/01_EAA/Lab/Assignment_1/01_Electronic_GasPedal.cydsn/Generated_Source/PSoC5/RGB_B_aliases.h : 
+
+C:/Jason/EIT/Semester_02/01_EAA/Lab/Assignment_1/01_Electronic_GasPedal.cydsn/Generated_Source/PSoC5/RGB_G.h : 
+
+C:/Jason/EIT/Semester_02/01_EAA/Lab/Assignment_1/01_Electronic_GasPedal.cydsn/Generated_Source/PSoC5/RGB_G_aliases.h : 
+
+C:/Jason/EIT/Semester_02/01_EAA/Lab/Assignment_1/01_Electronic_GasPedal.cydsn/Generated_Source/PSoC5/RGB_PWM_blue.h : 
+
+C:/Jason/EIT/Semester_02/01_EAA/Lab/Assignment_1/01_Electronic_GasPedal.cydsn/Generated_Source/PSoC5/RGB_PWM_green.h : 
+
+C:/Jason/EIT/Semester_02/01_EAA/Lab/Assignment_1/01_Electronic_GasPedal.cydsn/Generated_Source/PSoC5/RGB_PWM_red.h : 
+
+C:/Jason/EIT/Semester_02/01_EAA/Lab/Assignment_1/01_Electronic_GasPedal.cydsn/Generated_Source/PSoC5/RGB_R.h : 
+
+C:/Jason/EIT/Semester_02/01_EAA/Lab/Assignment_1/01_Electronic_GasPedal.cydsn/Generated_Source/PSoC5/RGB_R_aliases.h : 
+
+C:/Jason/EIT/Semester_02/01_EAA/Lab/Assignment_1/01_Electronic_GasPedal.cydsn/Generated_Source/PSoC5/UART_LOG.h : 
+
+C:/Jason/EIT/Semester_02/01_EAA/Lab/Assignment_1/01_Electronic_GasPedal.cydsn/Generated_Source/PSoC5/UART_LOG_IntClock.h : 
+
+C:/Jason/EIT/Semester_02/01_EAA/Lab/Assignment_1/01_Electronic_GasPedal.cydsn/Generated_Source/PSoC5/cmsis_armcc.h : 
+
+C:/Jason/EIT/Semester_02/01_EAA/Lab/Assignment_1/01_Electronic_GasPedal.cydsn/Generated_Source/PSoC5/cmsis_compiler.h : 
+
+C:/Jason/EIT/Semester_02/01_EAA/Lab/Assignment_1/01_Electronic_GasPedal.cydsn/Generated_Source/PSoC5/cmsis_gcc.h : 
+
+C:/Jason/EIT/Semester_02/01_EAA/Lab/Assignment_1/01_Electronic_GasPedal.cydsn/Generated_Source/PSoC5/core_cm3.h : 
+
+C:/Jason/EIT/Semester_02/01_EAA/Lab/Assignment_1/01_Electronic_GasPedal.cydsn/Generated_Source/PSoC5/core_cm3_psoc5.h : 
+
+C:/Jason/EIT/Semester_02/01_EAA/Lab/Assignment_1/01_Electronic_GasPedal.cydsn/Generated_Source/PSoC5/cyPm.h : 
+
+C:/Jason/EIT/Semester_02/01_EAA/Lab/Assignment_1/01_Electronic_GasPedal.cydsn/Generated_Source/PSoC5/cy_em_eeprom.h : 
+
+C:/Jason/EIT/Semester_02/01_EAA/Lab/Assignment_1/01_Electronic_GasPedal.cydsn/Generated_Source/PSoC5/cydevice.h : 
+
+C:/Jason/EIT/Semester_02/01_EAA/Lab/Assignment_1/01_Electronic_GasPedal.cydsn/Generated_Source/PSoC5/cydevice_trm.h : 
+
+C:/Jason/EIT/Semester_02/01_EAA/Lab/Assignment_1/01_Electronic_GasPedal.cydsn/Generated_Source/PSoC5/cydisabledsheets.h : 
+
+C:/Jason/EIT/Semester_02/01_EAA/Lab/Assignment_1/01_Electronic_GasPedal.cydsn/Generated_Source/PSoC5/cyfitter_cfg.h : 
+
+C:/Jason/EIT/Semester_02/01_EAA/Lab/Assignment_1/01_Electronic_GasPedal.cydsn/Generated_Source/PSoC5/cypins.h : 
+
+C:/Jason/EIT/Semester_02/01_EAA/Lab/Assignment_1/01_Electronic_GasPedal.cydsn/Generated_Source/PSoC5/cytypes.h : 
+
+C:/Jason/EIT/Semester_02/01_EAA/Lab/Assignment_1/01_Electronic_GasPedal.cydsn/Generated_Source/PSoC5/isr_OSShutdown.h : 
+
+C:/Jason/EIT/Semester_02/01_EAA/Lab/Assignment_1/01_Electronic_GasPedal.cydsn/Generated_Source/PSoC5/isr_testWDT.h : 
+
+C:/Jason/EIT/Semester_02/01_EAA/Lab/Assignment_1/01_Electronic_GasPedal.cydsn/Generated_Source/PSoC5/project.h : 
+
+C:/Jason/EIT/Semester_02/01_EAA/Lab/Assignment_1/01_Electronic_GasPedal.cydsn/Generated_Source/PSoC5/testWDT.h : 
+
+C:/Jason/EIT/Semester_02/01_EAA/Lab/Assignment_1/01_Electronic_GasPedal.cydsn/Generated_Source/PSoC5/testWDT_aliases.h : 
+
+C:/Jason/EIT/Semester_02/01_EAA/Lab/Assignment_1/01_Electronic_GasPedal.cydsn/source/bsw/LabBoard/joystick.h : 
+
+C:/Jason/EIT/Semester_02/01_EAA/Lab/Assignment_1/01_Electronic_GasPedal.cydsn/source/bsw/LabBoard/led.h : 
+
+C:/Jason/EIT/Semester_02/01_EAA/Lab/Assignment_1/01_Electronic_GasPedal.cydsn/source/bsw/derivate.h : 
+
+C:/Jason/EIT/Semester_02/01_EAA/Lab/Assignment_1/01_Electronic_GasPedal.cydsn/source/bsw/global.h : 
+
+C:/Jason/EIT/Semester_02/01_EAA/Lab/Assignment_1/01_Electronic_GasPedal.cydsn/source/bsw/watchdog.h : 
+
+C:/Jason/EIT/Semester_02/01_EAA/Lab/Assignment_1/01_Electronic_GasPedal.cydsn/source/rte/rte_types.h : 
+
+C:/Jason/EIT/Semester_02/01_EAA/Lab/Assignment_1/01_Electronic_GasPedal.cydsn/source/asw/main.c : 
+
+C:/Jason/EIT/Semester_02/01_EAA/Lab/Assignment_1/01_Electronic_GasPedal.cydsn/source/asw/tsk_background.h : 
+
+C:/Jason/EIT/Semester_02/01_EAA/Lab/Assignment_1/01_Electronic_GasPedal.cydsn/source/asw/tsk_control.h : 
+
+C:/Jason/EIT/Semester_02/01_EAA/Lab/Assignment_1/01_Electronic_GasPedal.cydsn/source/asw/tsk_inputoutput.h : 
+
+C:/Jason/EIT/Semester_02/01_EAA/Lab/Assignment_1/01_Electronic_GasPedal.cydsn/source/asw/tsk_system.h : 
+

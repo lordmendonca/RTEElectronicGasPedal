@@ -1,0 +1,6 @@
+C:\Jason\EIT\Semester_02\01_EAA\Lab\Assignment_1\01_Electronic_GasPedal.cydsn\01_Electronic_GasPedal.cyprj|c36db608-443a-48fd-8f92-7885b2f1fc47
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|9e5c7b64-b248-4b53-ac21-ebda89c912a0
+C:\Users\JASON\Documents\PSoC Creator\4.4\Downloads ( 4.4).cylib\Downloads ( 4.4).cyprj|18781133-a4d0-4dee-91fc-8c9e40ee6d75
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|25fcf0c9-8656-4101-83c2-6f63fb4f651d
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|751792cc-20ea-4705-8766-775083a5ece5
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|a88f8609-6324-47bd-8b19-c7e966be76a6

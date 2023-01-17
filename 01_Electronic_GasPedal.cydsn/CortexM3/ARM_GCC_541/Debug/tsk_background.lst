@@ -1,0 +1,671 @@
+ARM GAS  C:\Users\JASON\AppData\Local\Temp\ccfePTLk.s 			page 1
+
+
+   1              		.syntax unified
+   2              		.cpu cortex-m3
+   3              		.fpu softvfp
+   4              		.eabi_attribute 20, 1
+   5              		.eabi_attribute 21, 1
+   6              		.eabi_attribute 23, 3
+   7              		.eabi_attribute 24, 1
+   8              		.eabi_attribute 25, 1
+   9              		.eabi_attribute 26, 1
+  10              		.eabi_attribute 30, 1
+  11              		.eabi_attribute 34, 1
+  12              		.eabi_attribute 18, 4
+  13              		.thumb
+  14              		.syntax unified
+  15              		.file	"tsk_background.c"
+  16              		.text
+  17              	.Ltext0:
+  18              		.cfi_sections	.debug_frame
+  19              		.section	.text.Functsk_background,"ax",%progbits
+  20              		.align	2
+  21              		.global	Functsk_background
+  22              		.thumb
+  23              		.thumb_func
+  24              		.type	Functsk_background, %function
+  25              	Functsk_background:
+  26              	.LFB150:
+  27              		.file 1 "source\\asw\\tsk_background.c"
+   1:source\asw/tsk_background.c **** /* ========================================
+   2:source\asw/tsk_background.c ****  *
+   3:source\asw/tsk_background.c ****  * Copyright YOUR COMPANY, THE YEAR
+   4:source\asw/tsk_background.c ****  * All Rights Reserved
+   5:source\asw/tsk_background.c ****  * UNPUBLISHED, LICENSED SOFTWARE.
+   6:source\asw/tsk_background.c ****  *
+   7:source\asw/tsk_background.c ****  * CONFIDENTIAL AND PROPRIETARY INFORMATION
+   8:source\asw/tsk_background.c ****  * WHICH IS THE PROPERTY OF your company.
+   9:source\asw/tsk_background.c ****  *
+  10:source\asw/tsk_background.c ****  * ========================================
+  11:source\asw/tsk_background.c **** */
+  12:source\asw/tsk_background.c **** 
+  13:source\asw/tsk_background.c **** /* [] END OF FILE */
+  14:source\asw/tsk_background.c **** 
+  15:source\asw/tsk_background.c **** #include "project.h"
+  16:source\asw/tsk_background.c **** #include "global.h"
+  17:source\asw/tsk_background.c **** #include "rte.h"
+  18:source\asw/tsk_background.c **** #include "rte_types.h"
+  19:source\asw/tsk_background.c **** 
+  20:source\asw/tsk_background.c **** #include "watchdog.h"
+  21:source\asw/tsk_background.c **** 
+  22:source\asw/tsk_background.c **** #include "sp_common.h"
+  23:source\asw/tsk_background.c **** 
+  24:source\asw/tsk_background.c **** TASK(tsk_background)
+  25:source\asw/tsk_background.c **** {
+  28              		.loc 1 25 0
+  29              		.cfi_startproc
+  30              		@ Volatile: function does not return.
+  31              		@ args = 0, pretend = 0, frame = 0
+  32              		@ frame_needed = 0, uses_anonymous_args = 0
+ARM GAS  C:\Users\JASON\AppData\Local\Temp\ccfePTLk.s 			page 2
+
+
+  33 0000 08B5     		push	{r3, lr}
+  34              		.cfi_def_cfa_offset 8
+  35              		.cfi_offset 3, -8
+  36              		.cfi_offset 14, -4
+  37              	.L2:
+  26:source\asw/tsk_background.c ****     while(1)
+  27:source\asw/tsk_background.c ****     {
+  28:source\asw/tsk_background.c ****         /**
+  29:source\asw/tsk_background.c ****          * When the bits 0 to 3 of the alive monitoring status register were set to '1' by the resp
+  30:source\asw/tsk_background.c ****          * runnables, the watchdog timer is services such that the timer is restarted.
+  31:source\asw/tsk_background.c ****          * If any of the bits were not set then by not servicing the watchdog timer, a timeout afte
+  32:source\asw/tsk_background.c ****          * timeout period will occur.
+  33:source\asw/tsk_background.c ****          * It is necessary to clear the status register after each servicing of the watchdog timer 
+  34:source\asw/tsk_background.c ****          * the verification of the alive monitoring.
+  35:source\asw/tsk_background.c ****          */
+  36:source\asw/tsk_background.c ****         if((aliveWD_st & RUNNABLES_ALIVE) == RUNNABLES_ALIVE)
+  38              		.loc 1 36 0
+  39 0002 064B     		ldr	r3, .L5
+  40 0004 1B78     		ldrb	r3, [r3]	@ zero_extendqisi2
+  41 0006 03F00F03 		and	r3, r3, #15
+  42 000a 0F2B     		cmp	r3, #15
+  43 000c F9D1     		bne	.L2
+  37:source\asw/tsk_background.c ****         {
+  38:source\asw/tsk_background.c ****             WD_Trigger();
+  44              		.loc 1 38 0
+  45 000e FFF7FEFF 		bl	WD_Trigger
+  46              	.LVL0:
+  39:source\asw/tsk_background.c ****             aliveWD_st &= RUNNABLES_NOT_ALIVE;
+  47              		.loc 1 39 0
+  48 0012 0022     		movs	r2, #0
+  49 0014 014B     		ldr	r3, .L5
+  50 0016 1A70     		strb	r2, [r3]
+  51 0018 F3E7     		b	.L2
+  52              	.L6:
+  53 001a 00BF     		.align	2
+  54              	.L5:
+  55 001c 00000000 		.word	aliveWD_st
+  56              		.cfi_endproc
+  57              	.LFE150:
+  58              		.size	Functsk_background, .-Functsk_background
+  59              		.text
+  60              	.Letext0:
+  61              		.file 2 "c:\\program files (x86)\\cypress\\psoc creator\\4.4\\psoc creator\\import\\gnu\\arm\\5.4.
+  62              		.file 3 "c:\\program files (x86)\\cypress\\psoc creator\\4.4\\psoc creator\\import\\gnu\\arm\\5.4.
+  63              		.file 4 "Generated_Source\\PSoC5/ErikaOS_common_ee_types.inc"
+  64              		.file 5 "Generated_Source\\PSoC5/ErikaOS_cortex_mx_ee_cpu.inc"
+  65              		.file 6 "Generated_Source\\PSoC5/ErikaOS_ee_oo_intfunc.inc"
+  66              		.file 7 "Generated_Source\\PSoC5/ErikaOS_cortex_mx_ee_context.inc"
+  67              		.file 8 "Generated_Source\\PSoC5/ErikaOS_common_ee_primitives.inc"
+  68              		.file 9 "Generated_Source\\PSoC5/core_cm3.h"
+  69              		.file 10 ".\\source\\bsw/watchdog.h"
+  70              		.section	.debug_info,"",%progbits
+  71              	.Ldebug_info0:
+  72 0000 6B010000 		.4byte	0x16b
+  73 0004 0400     		.2byte	0x4
+  74 0006 00000000 		.4byte	.Ldebug_abbrev0
+  75 000a 04       		.byte	0x4
+ARM GAS  C:\Users\JASON\AppData\Local\Temp\ccfePTLk.s 			page 3
+
+
+  76 000b 01       		.uleb128 0x1
+  77 000c 48000000 		.4byte	.LASF30
+  78 0010 0C       		.byte	0xc
+  79 0011 BC010000 		.4byte	.LASF31
+  80 0015 2A020000 		.4byte	.LASF32
+  81 0019 00000000 		.4byte	.Ldebug_ranges0+0
+  82 001d 00000000 		.4byte	0
+  83 0021 00000000 		.4byte	.Ldebug_line0
+  84 0025 02       		.uleb128 0x2
+  85 0026 01       		.byte	0x1
+  86 0027 06       		.byte	0x6
+  87 0028 8D020000 		.4byte	.LASF0
+  88 002c 03       		.uleb128 0x3
+  89 002d 00000000 		.4byte	.LASF4
+  90 0031 02       		.byte	0x2
+  91 0032 1D       		.byte	0x1d
+  92 0033 37000000 		.4byte	0x37
+  93 0037 02       		.uleb128 0x2
+  94 0038 01       		.byte	0x1
+  95 0039 08       		.byte	0x8
+  96 003a 3A000000 		.4byte	.LASF1
+  97 003e 02       		.uleb128 0x2
+  98 003f 02       		.byte	0x2
+  99 0040 05       		.byte	0x5
+ 100 0041 F5010000 		.4byte	.LASF2
+ 101 0045 02       		.uleb128 0x2
+ 102 0046 02       		.byte	0x2
+ 103 0047 07       		.byte	0x7
+ 104 0048 E8000000 		.4byte	.LASF3
+ 105 004c 03       		.uleb128 0x3
+ 106 004d 0A000000 		.4byte	.LASF5
+ 107 0051 02       		.byte	0x2
+ 108 0052 3F       		.byte	0x3f
+ 109 0053 57000000 		.4byte	0x57
+ 110 0057 02       		.uleb128 0x2
+ 111 0058 04       		.byte	0x4
+ 112 0059 05       		.byte	0x5
+ 113 005a 78020000 		.4byte	.LASF6
+ 114 005e 02       		.uleb128 0x2
+ 115 005f 04       		.byte	0x4
+ 116 0060 07       		.byte	0x7
+ 117 0061 D6000000 		.4byte	.LASF7
+ 118 0065 02       		.uleb128 0x2
+ 119 0066 08       		.byte	0x8
+ 120 0067 05       		.byte	0x5
+ 121 0068 A9010000 		.4byte	.LASF8
+ 122 006c 02       		.uleb128 0x2
+ 123 006d 08       		.byte	0x8
+ 124 006e 07       		.byte	0x7
+ 125 006f 5B010000 		.4byte	.LASF9
+ 126 0073 04       		.uleb128 0x4
+ 127 0074 04       		.byte	0x4
+ 128 0075 05       		.byte	0x5
+ 129 0076 696E7400 		.ascii	"int\000"
+ 130 007a 02       		.uleb128 0x2
+ 131 007b 04       		.byte	0x4
+ 132 007c 07       		.byte	0x7
+ARM GAS  C:\Users\JASON\AppData\Local\Temp\ccfePTLk.s 			page 4
+
+
+ 133 007d 3C010000 		.4byte	.LASF10
+ 134 0081 03       		.uleb128 0x3
+ 135 0082 72010000 		.4byte	.LASF11
+ 136 0086 03       		.byte	0x3
+ 137 0087 18       		.byte	0x18
+ 138 0088 2C000000 		.4byte	0x2c
+ 139 008c 03       		.uleb128 0x3
+ 140 008d 98010000 		.4byte	.LASF12
+ 141 0091 03       		.byte	0x3
+ 142 0092 2C       		.byte	0x2c
+ 143 0093 4C000000 		.4byte	0x4c
+ 144 0097 02       		.uleb128 0x2
+ 145 0098 04       		.byte	0x4
+ 146 0099 04       		.byte	0x4
+ 147 009a 34000000 		.4byte	.LASF13
+ 148 009e 02       		.uleb128 0x2
+ 149 009f 08       		.byte	0x8
+ 150 00a0 04       		.byte	0x4
+ 151 00a1 11010000 		.4byte	.LASF14
+ 152 00a5 02       		.uleb128 0x2
+ 153 00a6 01       		.byte	0x1
+ 154 00a7 08       		.byte	0x8
+ 155 00a8 B7010000 		.4byte	.LASF15
+ 156 00ac 02       		.uleb128 0x2
+ 157 00ad 08       		.byte	0x8
+ 158 00ae 04       		.byte	0x4
+ 159 00af 81020000 		.4byte	.LASF16
+ 160 00b3 03       		.uleb128 0x3
+ 161 00b4 FB000000 		.4byte	.LASF17
+ 162 00b8 04       		.byte	0x4
+ 163 00b9 53       		.byte	0x53
+ 164 00ba 73000000 		.4byte	0x73
+ 165 00be 03       		.uleb128 0x3
+ 166 00bf 51010000 		.4byte	.LASF18
+ 167 00c3 04       		.byte	0x4
+ 168 00c4 54       		.byte	0x54
+ 169 00c5 7A000000 		.4byte	0x7a
+ 170 00c9 03       		.uleb128 0x3
+ 171 00ca D8010000 		.4byte	.LASF19
+ 172 00ce 05       		.byte	0x5
+ 173 00cf 4D       		.byte	0x4d
+ 174 00d0 BE000000 		.4byte	0xbe
+ 175 00d4 03       		.uleb128 0x3
+ 176 00d5 49010000 		.4byte	.LASF20
+ 177 00d9 05       		.byte	0x5
+ 178 00da 4F       		.byte	0x4f
+ 179 00db BE000000 		.4byte	0xbe
+ 180 00df 03       		.uleb128 0x3
+ 181 00e0 2D000000 		.4byte	.LASF21
+ 182 00e4 05       		.byte	0x5
+ 183 00e5 78       		.byte	0x78
+ 184 00e6 B3000000 		.4byte	0xb3
+ 185 00ea 02       		.uleb128 0x2
+ 186 00eb 04       		.byte	0x4
+ 187 00ec 07       		.byte	0x7
+ 188 00ed A0010000 		.4byte	.LASF22
+ 189 00f1 05       		.uleb128 0x5
+ARM GAS  C:\Users\JASON\AppData\Local\Temp\ccfePTLk.s 			page 5
+
+
+ 190 00f2 17020000 		.4byte	.LASF33
+ 191 00f6 01       		.byte	0x1
+ 192 00f7 18       		.byte	0x18
+ 193 00f8 00000000 		.4byte	.LFB150
+ 194 00fc 20000000 		.4byte	.LFE150-.LFB150
+ 195 0100 01       		.uleb128 0x1
+ 196 0101 9C       		.byte	0x9c
+ 197 0102 10010000 		.4byte	0x110
+ 198 0106 06       		.uleb128 0x6
+ 199 0107 12000000 		.4byte	.LVL0
+ 200 010b 63010000 		.4byte	0x163
+ 201 010f 00       		.byte	0
+ 202 0110 07       		.uleb128 0x7
+ 203 0111 FF010000 		.4byte	.LASF23
+ 204 0115 06       		.byte	0x6
+ 205 0116 40       		.byte	0x40
+ 206 0117 C9000000 		.4byte	0xc9
+ 207 011b 07       		.uleb128 0x7
+ 208 011c 14000000 		.4byte	.LASF24
+ 209 0120 06       		.byte	0x6
+ 210 0121 47       		.byte	0x47
+ 211 0122 D4000000 		.4byte	0xd4
+ 212 0126 07       		.uleb128 0x7
+ 213 0127 7A010000 		.4byte	.LASF25
+ 214 012b 06       		.byte	0x6
+ 215 012c 4A       		.byte	0x4a
+ 216 012d C9000000 		.4byte	0xc9
+ 217 0131 07       		.uleb128 0x7
+ 218 0132 23010000 		.4byte	.LASF26
+ 219 0136 07       		.byte	0x7
+ 220 0137 48       		.byte	0x48
+ 221 0138 DF000000 		.4byte	0xdf
+ 222 013c 07       		.uleb128 0x7
+ 223 013d E0010000 		.4byte	.LASF27
+ 224 0141 08       		.byte	0x8
+ 225 0142 44       		.byte	0x44
+ 226 0143 C9000000 		.4byte	0xc9
+ 227 0147 08       		.uleb128 0x8
+ 228 0148 04010000 		.4byte	.LASF28
+ 229 014c 09       		.byte	0x9
+ 230 014d 1207     		.2byte	0x712
+ 231 014f 53010000 		.4byte	0x153
+ 232 0153 09       		.uleb128 0x9
+ 233 0154 8C000000 		.4byte	0x8c
+ 234 0158 07       		.uleb128 0x7
+ 235 0159 18010000 		.4byte	.LASF29
+ 236 015d 0A       		.byte	0xa
+ 237 015e 2E       		.byte	0x2e
+ 238 015f 81000000 		.4byte	0x81
+ 239 0163 0A       		.uleb128 0xa
+ 240 0164 8D010000 		.4byte	.LASF34
+ 241 0168 8D010000 		.4byte	.LASF34
+ 242 016c 0A       		.byte	0xa
+ 243 016d 40       		.byte	0x40
+ 244 016e 00       		.byte	0
+ 245              		.section	.debug_abbrev,"",%progbits
+ 246              	.Ldebug_abbrev0:
+ARM GAS  C:\Users\JASON\AppData\Local\Temp\ccfePTLk.s 			page 6
+
+
+ 247 0000 01       		.uleb128 0x1
+ 248 0001 11       		.uleb128 0x11
+ 249 0002 01       		.byte	0x1
+ 250 0003 25       		.uleb128 0x25
+ 251 0004 0E       		.uleb128 0xe
+ 252 0005 13       		.uleb128 0x13
+ 253 0006 0B       		.uleb128 0xb
+ 254 0007 03       		.uleb128 0x3
+ 255 0008 0E       		.uleb128 0xe
+ 256 0009 1B       		.uleb128 0x1b
+ 257 000a 0E       		.uleb128 0xe
+ 258 000b 55       		.uleb128 0x55
+ 259 000c 17       		.uleb128 0x17
+ 260 000d 11       		.uleb128 0x11
+ 261 000e 01       		.uleb128 0x1
+ 262 000f 10       		.uleb128 0x10
+ 263 0010 17       		.uleb128 0x17
+ 264 0011 00       		.byte	0
+ 265 0012 00       		.byte	0
+ 266 0013 02       		.uleb128 0x2
+ 267 0014 24       		.uleb128 0x24
+ 268 0015 00       		.byte	0
+ 269 0016 0B       		.uleb128 0xb
+ 270 0017 0B       		.uleb128 0xb
+ 271 0018 3E       		.uleb128 0x3e
+ 272 0019 0B       		.uleb128 0xb
+ 273 001a 03       		.uleb128 0x3
+ 274 001b 0E       		.uleb128 0xe
+ 275 001c 00       		.byte	0
+ 276 001d 00       		.byte	0
+ 277 001e 03       		.uleb128 0x3
+ 278 001f 16       		.uleb128 0x16
+ 279 0020 00       		.byte	0
+ 280 0021 03       		.uleb128 0x3
+ 281 0022 0E       		.uleb128 0xe
+ 282 0023 3A       		.uleb128 0x3a
+ 283 0024 0B       		.uleb128 0xb
+ 284 0025 3B       		.uleb128 0x3b
+ 285 0026 0B       		.uleb128 0xb
+ 286 0027 49       		.uleb128 0x49
+ 287 0028 13       		.uleb128 0x13
+ 288 0029 00       		.byte	0
+ 289 002a 00       		.byte	0
+ 290 002b 04       		.uleb128 0x4
+ 291 002c 24       		.uleb128 0x24
+ 292 002d 00       		.byte	0
+ 293 002e 0B       		.uleb128 0xb
+ 294 002f 0B       		.uleb128 0xb
+ 295 0030 3E       		.uleb128 0x3e
+ 296 0031 0B       		.uleb128 0xb
+ 297 0032 03       		.uleb128 0x3
+ 298 0033 08       		.uleb128 0x8
+ 299 0034 00       		.byte	0
+ 300 0035 00       		.byte	0
+ 301 0036 05       		.uleb128 0x5
+ 302 0037 2E       		.uleb128 0x2e
+ 303 0038 01       		.byte	0x1
+ARM GAS  C:\Users\JASON\AppData\Local\Temp\ccfePTLk.s 			page 7
+
+
+ 304 0039 3F       		.uleb128 0x3f
+ 305 003a 19       		.uleb128 0x19
+ 306 003b 03       		.uleb128 0x3
+ 307 003c 0E       		.uleb128 0xe
+ 308 003d 3A       		.uleb128 0x3a
+ 309 003e 0B       		.uleb128 0xb
+ 310 003f 3B       		.uleb128 0x3b
+ 311 0040 0B       		.uleb128 0xb
+ 312 0041 27       		.uleb128 0x27
+ 313 0042 19       		.uleb128 0x19
+ 314 0043 8701     		.uleb128 0x87
+ 315 0045 19       		.uleb128 0x19
+ 316 0046 11       		.uleb128 0x11
+ 317 0047 01       		.uleb128 0x1
+ 318 0048 12       		.uleb128 0x12
+ 319 0049 06       		.uleb128 0x6
+ 320 004a 40       		.uleb128 0x40
+ 321 004b 18       		.uleb128 0x18
+ 322 004c 9742     		.uleb128 0x2117
+ 323 004e 19       		.uleb128 0x19
+ 324 004f 01       		.uleb128 0x1
+ 325 0050 13       		.uleb128 0x13
+ 326 0051 00       		.byte	0
+ 327 0052 00       		.byte	0
+ 328 0053 06       		.uleb128 0x6
+ 329 0054 898201   		.uleb128 0x4109
+ 330 0057 00       		.byte	0
+ 331 0058 11       		.uleb128 0x11
+ 332 0059 01       		.uleb128 0x1
+ 333 005a 31       		.uleb128 0x31
+ 334 005b 13       		.uleb128 0x13
+ 335 005c 00       		.byte	0
+ 336 005d 00       		.byte	0
+ 337 005e 07       		.uleb128 0x7
+ 338 005f 34       		.uleb128 0x34
+ 339 0060 00       		.byte	0
+ 340 0061 03       		.uleb128 0x3
+ 341 0062 0E       		.uleb128 0xe
+ 342 0063 3A       		.uleb128 0x3a
+ 343 0064 0B       		.uleb128 0xb
+ 344 0065 3B       		.uleb128 0x3b
+ 345 0066 0B       		.uleb128 0xb
+ 346 0067 49       		.uleb128 0x49
+ 347 0068 13       		.uleb128 0x13
+ 348 0069 3F       		.uleb128 0x3f
+ 349 006a 19       		.uleb128 0x19
+ 350 006b 3C       		.uleb128 0x3c
+ 351 006c 19       		.uleb128 0x19
+ 352 006d 00       		.byte	0
+ 353 006e 00       		.byte	0
+ 354 006f 08       		.uleb128 0x8
+ 355 0070 34       		.uleb128 0x34
+ 356 0071 00       		.byte	0
+ 357 0072 03       		.uleb128 0x3
+ 358 0073 0E       		.uleb128 0xe
+ 359 0074 3A       		.uleb128 0x3a
+ 360 0075 0B       		.uleb128 0xb
+ARM GAS  C:\Users\JASON\AppData\Local\Temp\ccfePTLk.s 			page 8
+
+
+ 361 0076 3B       		.uleb128 0x3b
+ 362 0077 05       		.uleb128 0x5
+ 363 0078 49       		.uleb128 0x49
+ 364 0079 13       		.uleb128 0x13
+ 365 007a 3F       		.uleb128 0x3f
+ 366 007b 19       		.uleb128 0x19
+ 367 007c 3C       		.uleb128 0x3c
+ 368 007d 19       		.uleb128 0x19
+ 369 007e 00       		.byte	0
+ 370 007f 00       		.byte	0
+ 371 0080 09       		.uleb128 0x9
+ 372 0081 35       		.uleb128 0x35
+ 373 0082 00       		.byte	0
+ 374 0083 49       		.uleb128 0x49
+ 375 0084 13       		.uleb128 0x13
+ 376 0085 00       		.byte	0
+ 377 0086 00       		.byte	0
+ 378 0087 0A       		.uleb128 0xa
+ 379 0088 2E       		.uleb128 0x2e
+ 380 0089 00       		.byte	0
+ 381 008a 3F       		.uleb128 0x3f
+ 382 008b 19       		.uleb128 0x19
+ 383 008c 3C       		.uleb128 0x3c
+ 384 008d 19       		.uleb128 0x19
+ 385 008e 6E       		.uleb128 0x6e
+ 386 008f 0E       		.uleb128 0xe
+ 387 0090 03       		.uleb128 0x3
+ 388 0091 0E       		.uleb128 0xe
+ 389 0092 3A       		.uleb128 0x3a
+ 390 0093 0B       		.uleb128 0xb
+ 391 0094 3B       		.uleb128 0x3b
+ 392 0095 0B       		.uleb128 0xb
+ 393 0096 00       		.byte	0
+ 394 0097 00       		.byte	0
+ 395 0098 00       		.byte	0
+ 396              		.section	.debug_aranges,"",%progbits
+ 397 0000 1C000000 		.4byte	0x1c
+ 398 0004 0200     		.2byte	0x2
+ 399 0006 00000000 		.4byte	.Ldebug_info0
+ 400 000a 04       		.byte	0x4
+ 401 000b 00       		.byte	0
+ 402 000c 0000     		.2byte	0
+ 403 000e 0000     		.2byte	0
+ 404 0010 00000000 		.4byte	.LFB150
+ 405 0014 20000000 		.4byte	.LFE150-.LFB150
+ 406 0018 00000000 		.4byte	0
+ 407 001c 00000000 		.4byte	0
+ 408              		.section	.debug_ranges,"",%progbits
+ 409              	.Ldebug_ranges0:
+ 410 0000 00000000 		.4byte	.LFB150
+ 411 0004 20000000 		.4byte	.LFE150
+ 412 0008 00000000 		.4byte	0
+ 413 000c 00000000 		.4byte	0
+ 414              		.section	.debug_line,"",%progbits
+ 415              	.Ldebug_line0:
+ 416 0000 2D020000 		.section	.debug_str,"MS",%progbits,1
+ 416      02001302 
+ARM GAS  C:\Users\JASON\AppData\Local\Temp\ccfePTLk.s 			page 9
+
+
+ 416      00000201 
+ 416      FB0E0D00 
+ 416      01010101 
+ 417              	.LASF4:
+ 418 0000 5F5F7569 		.ascii	"__uint8_t\000"
+ 418      6E74385F 
+ 418      7400
+ 419              	.LASF5:
+ 420 000a 5F5F696E 		.ascii	"__int32_t\000"
+ 420      7433325F 
+ 420      7400
+ 421              	.LASF24:
+ 422 0014 45455F6F 		.ascii	"EE_oo_IRQ_suspend_status\000"
+ 422      6F5F4952 
+ 422      515F7375 
+ 422      7370656E 
+ 422      645F7374 
+ 423              	.LASF21:
+ 424 002d 45455F54 		.ascii	"EE_TID\000"
+ 424      494400
+ 425              	.LASF13:
+ 426 0034 666C6F61 		.ascii	"float\000"
+ 426      7400
+ 427              	.LASF1:
+ 428 003a 756E7369 		.ascii	"unsigned char\000"
+ 428      676E6564 
+ 428      20636861 
+ 428      7200
+ 429              	.LASF30:
+ 430 0048 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
+ 430      43313120 
+ 430      352E342E 
+ 430      31203230 
+ 430      31363036 
+ 431 007b 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m3 -mthumb -g -O"
+ 431      20726576 
+ 431      6973696F 
+ 431      6E203233 
+ 431      37373135 
+ 432 00ae 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
+ 432      66756E63 
+ 432      74696F6E 
+ 432      2D736563 
+ 432      74696F6E 
+ 433              	.LASF7:
+ 434 00d6 6C6F6E67 		.ascii	"long unsigned int\000"
+ 434      20756E73 
+ 434      69676E65 
+ 434      6420696E 
+ 434      7400
+ 435              	.LASF3:
+ 436 00e8 73686F72 		.ascii	"short unsigned int\000"
+ 436      7420756E 
+ 436      7369676E 
+ 436      65642069 
+ 436      6E7400
+ 437              	.LASF17:
+ARM GAS  C:\Users\JASON\AppData\Local\Temp\ccfePTLk.s 			page 10
+
+
+ 438 00fb 45455F49 		.ascii	"EE_INT32\000"
+ 438      4E543332 
+ 438      00
+ 439              	.LASF28:
+ 440 0104 49544D5F 		.ascii	"ITM_RxBuffer\000"
+ 440      52784275 
+ 440      66666572 
+ 440      00
+ 441              	.LASF14:
+ 442 0111 646F7562 		.ascii	"double\000"
+ 442      6C6500
+ 443              	.LASF29:
+ 444 0118 616C6976 		.ascii	"aliveWD_st\000"
+ 444      6557445F 
+ 444      737400
+ 445              	.LASF26:
+ 446 0123 45455F73 		.ascii	"EE_std_endcycle_next_tid\000"
+ 446      74645F65 
+ 446      6E646379 
+ 446      636C655F 
+ 446      6E657874 
+ 447              	.LASF10:
+ 448 013c 756E7369 		.ascii	"unsigned int\000"
+ 448      676E6564 
+ 448      20696E74 
+ 448      00
+ 449              	.LASF20:
+ 450 0149 45455F46 		.ascii	"EE_FREG\000"
+ 450      52454700 
+ 451              	.LASF18:
+ 452 0151 45455F55 		.ascii	"EE_UINT32\000"
+ 452      494E5433 
+ 452      3200
+ 453              	.LASF9:
+ 454 015b 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 454      206C6F6E 
+ 454      6720756E 
+ 454      7369676E 
+ 454      65642069 
+ 455              	.LASF11:
+ 456 0172 75696E74 		.ascii	"uint8_t\000"
+ 456      385F7400 
+ 457              	.LASF25:
+ 458 017a 45455F41 		.ascii	"EE_ApplicationMode\000"
+ 458      70706C69 
+ 458      63617469 
+ 458      6F6E4D6F 
+ 458      646500
+ 459              	.LASF34:
+ 460 018d 57445F54 		.ascii	"WD_Trigger\000"
+ 460      72696767 
+ 460      657200
+ 461              	.LASF12:
+ 462 0198 696E7433 		.ascii	"int32_t\000"
+ 462      325F7400 
+ 463              	.LASF22:
+ 464 01a0 73697A65 		.ascii	"sizetype\000"
+ARM GAS  C:\Users\JASON\AppData\Local\Temp\ccfePTLk.s 			page 11
+
+
+ 464      74797065 
+ 464      00
+ 465              	.LASF8:
+ 466 01a9 6C6F6E67 		.ascii	"long long int\000"
+ 466      206C6F6E 
+ 466      6720696E 
+ 466      7400
+ 467              	.LASF15:
+ 468 01b7 63686172 		.ascii	"char\000"
+ 468      00
+ 469              	.LASF31:
+ 470 01bc 736F7572 		.ascii	"source\\asw\\tsk_background.c\000"
+ 470      63655C61 
+ 470      73775C74 
+ 470      736B5F62 
+ 470      61636B67 
+ 471              	.LASF19:
+ 472 01d8 45455F55 		.ascii	"EE_UREG\000"
+ 472      52454700 
+ 473              	.LASF27:
+ 474 01e0 45455F49 		.ascii	"EE_IRQ_nesting_level\000"
+ 474      52515F6E 
+ 474      65737469 
+ 474      6E675F6C 
+ 474      6576656C 
+ 475              	.LASF2:
+ 476 01f5 73686F72 		.ascii	"short int\000"
+ 476      7420696E 
+ 476      7400
+ 477              	.LASF23:
+ 478 01ff 45455F6F 		.ascii	"EE_oo_IRQ_disable_count\000"
+ 478      6F5F4952 
+ 478      515F6469 
+ 478      7361626C 
+ 478      655F636F 
+ 479              	.LASF33:
+ 480 0217 46756E63 		.ascii	"Functsk_background\000"
+ 480      74736B5F 
+ 480      6261636B 
+ 480      67726F75 
+ 480      6E6400
+ 481              	.LASF32:
+ 482 022a 433A5C4A 		.ascii	"C:\\Jason\\EIT\\Semester_02\\01_EAA\\Lab\\Assignmen"
+ 482      61736F6E 
+ 482      5C454954 
+ 482      5C53656D 
+ 482      65737465 
+ 483 0257 745F315C 		.ascii	"t_1\\01_Electronic_GasPedal.cydsn\000"
+ 483      30315F45 
+ 483      6C656374 
+ 483      726F6E69 
+ 483      635F4761 
+ 484              	.LASF6:
+ 485 0278 6C6F6E67 		.ascii	"long int\000"
+ 485      20696E74 
+ 485      00
+ 486              	.LASF16:
+ARM GAS  C:\Users\JASON\AppData\Local\Temp\ccfePTLk.s 			page 12
+
+
+ 487 0281 6C6F6E67 		.ascii	"long double\000"
+ 487      20646F75 
+ 487      626C6500 
+ 488              	.LASF0:
+ 489 028d 7369676E 		.ascii	"signed char\000"
+ 489      65642063 
+ 489      68617200 
+ 490              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran

@@ -1,0 +1,16 @@
+# 01_Electronic_GasPedal
+# 2022-05-27 06:50:36Z
+
+set_io "Rx_LOG(0)" iocell 12 6
+set_io "Tx_LOG(0)" iocell 12 7
+set_io "LED_red(0)" iocell 0 6
+set_io "RGB_R(0)" iocell 2 5
+set_io "RGB_G(0)" iocell 2 4
+set_io "RGB_B(0)" iocell 2 3
+set_io "LED_yellow(0)" iocell 2 0
+set_io "LED_green(0)" iocell 0 7
+set_io "Joystick_X(0)" iocell 0 0
+set_io "Joystick_Y(0)" iocell 0 1
+set_io "testWDT(0)" iocell 0 4
+set_io "OSShutdown(0)" iocell 0 3
+set_location "\JOYSTICK_ADC_XY:SAR:ADC_SAR\" sarcell -1 -1 0
